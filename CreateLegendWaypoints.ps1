@@ -48,7 +48,7 @@ function Create-Waypoint($zone, $title, $tooltip, $x, $y) {
         "^(?:The )?Savage Coast$" {
             $global:savageCoast = Write-Waypoint $global:savageCoast $title $tooltip $x $y
         }
-        "^(?:The )?Blue Mountains$" {
+        "^(?:The )?Blue Mountains?$" {
             $global:blueMountains = Write-Waypoint $global:blueMountains $title $tooltip $x $y
         }
         "^Kaidan$" {
@@ -60,7 +60,7 @@ function Create-Waypoint($zone, $title, $tooltip, $x, $y) {
         "^(?:The )?City of the Sun God$" {
             $global:cityOfTheSunGod = Write-Waypoint $global:cityOfTheSunGod $title $tooltip $x $y
         }
-        "^(?:The )?Besieged Farmlands$" {
+        "^(?:The )?Besieged Farmlands?$" {
             $global:besiegedFarmlands = Write-Waypoint $global:besiegedFarmlands $title $tooltip $x $y
         }
         "^(?:The )?Shadowy Forest$" {
